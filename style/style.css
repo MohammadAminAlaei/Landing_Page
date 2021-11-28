@@ -1,0 +1,574 @@
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('./responsive.css');
+
+:root {
+    --primary: #00A19D;
+    --textprimary: #FAFF00;
+}
+
+::selection {
+    background-color: var(--textprimary);
+    color: var(--primary)
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif ;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+body {
+    background-color: #F3F1F5;
+    z-index: -2;
+    z-index: -2;
+}
+
+header {
+    background-image: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url('../img/network.jpg');
+    background-size: cover;
+    padding-bottom: 10rem;
+    background-attachment: fixed;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-itemes-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
+.align-item-baseline {
+    align-items: baseline;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.header-title  {
+    font-size: 3rem;
+    padding: 10rem 0;
+    color: #fff;
+    font-weight: 500;
+}
+
+.header-title i {
+    color: #FAFF00;
+}
+
+.header-sub-title{
+    color: #FAFF00;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.header-text {
+    font-size: 2rem;
+    color: #FAFF00;
+    padding: 1.5rem 0;
+    font-weight: 400;
+}
+
+.texts {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    opacity: .7;
+    padding: 1rem 0;
+}
+
+.inputs input {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.inputs input:checked:after {
+    content: '✓';
+    background: #FAFF00;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    color: #000;
+    border-radius: .2rem;
+    text-align: center;
+    font-family: 'Fontawesome'!important;
+}
+
+.inputs div {
+    margin: 1rem 3rem 1rem 0;
+}
+
+.inputs label {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.header-title-div2 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: right;
+}
+
+.header-big-text {
+    font-size: 12rem;
+    color: #fff;
+    font-weight: 400;
+    text-align: right;
+}
+
+.mo {
+    color: #fff;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.header-div2 button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    padding: 2rem;
+    display: block;
+}
+
+.header-div2 button {
+    width: 100%;
+    margin: 2rem 0;
+    border: none;
+    background-color: #FAFF00;
+    cursor: pointer;
+    box-shadow: 0 0 .3rem .1rem #FAFF00;
+    font-weight: 300;
+}
+
+.card {
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: .3rem .3rem 1rem .5rem #ccc;
+    flex-grow: 1;
+    background-color: #fff;
+    transition: all ease-in-out .3s;
+}
+
+.card:hover {
+    transform: translateY(-2rem) scale(1.1);
+}
+
+.background-card {
+    background: linear-gradient(225deg, #F0A500, #FAFF00 70%);
+    padding: 2rem;
+}
+
+.cards {
+    margin: 5rem 0;
+}
+
+
+.text {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    color: #000;
+    font-weight: 500;
+}
+
+.card-sub-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.card-Price {
+    font-size: 4rem;
+    color: green;
+    padding: .5rem 0;
+    font-weight: 500;
+}
+
+.card span {
+    font-size: 1.3rem;
+}
+
+.text p {
+    padding: .5rem 0;
+    opacity: .7;
+}
+
+.text button {
+    width: 100%;
+    margin: 1.5rem 0 0 0;
+    background-color: #00A19D;
+    border: none;
+    border-radius: .3rem;
+}
+
+.text button a {
+    display: block;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-1 .card-sub-title {
+    color: green;
+} 
+ 
+.card-2 .background-card {
+    background: linear-gradient(45deg, #57CC99 60%, #00A19D);
+}
+
+.card-3 .background-card {
+    background: linear-gradient(45deg, #FF0000 60%, #FF5C58);
+}
+
+.card-2 .card-title, .card-2 .card-sub-title, .card-2 span, .card-3 .card-title, .card-3 .card-sub-title, .card-3 span{
+    color: #fff;
+}
+
+.card-2 .card-Price, .card-3 .card-Price {
+    color: #FAFF00;
+}
+
+.card-2 {
+    margin: 0 2.5rem;
+}
+
+.offer {
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFF00;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: .2rem solid #F0A500;
+    flex-direction: column;
+}
+
+.offer p {
+    font-size: 1rem;
+}
+
+.sub-cards img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.subcard-title {
+    font-size: 3rem;
+    width: 50%;
+    padding: 2.5rem;
+    font-weight: 400;
+}
+
+.subcard-text {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    opacity: .7;
+    padding: 1.5rem 2.5rem;
+}
+
+main {
+    background-color: #fff;
+    padding: 5rem 0;
+}
+
+.main-title {
+    font-size: 3rem;
+    width: 50%;
+    padding: 2.5rem 0;
+    font-weight: 400;
+}
+
+.main-button {
+    width: 30%;
+    background-color: #00A19D;
+    border: none;
+    border-radius: .3rem;
+}
+
+.main-button a {
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+main img {
+    width: 30rem;
+    height: 30rem;
+}
+
+.main-p {
+    padding: 0 4rem 2.5rem 0;
+}
+
+.sub-main {
+    padding: 4rem 0;
+}
+
+
+.sub-main-icon {
+    width: 10rem;
+    height: 10rem;
+    background-color: #FAFF00;
+    padding: 6rem;
+    border-radius: 50%;
+    box-shadow: .2rem .2rem 1rem .2rem #ccc;
+}
+
+.sub-main-icon i {
+    font-size: 6rem;
+    color: #00A19D;
+}
+
+.sub-main-title {
+    padding: 0 0 1.5rem 2.5rem;
+    font-size: 1.3rem;
+    color: #00A19D;
+    font-weight: 500;
+}
+
+.background-color {
+    background-color: #00A19D;
+}
+
+.user-img {
+    width: 20rem;
+    height: 20rem;
+}
+
+.users {
+    padding: 3rem 0;
+}
+
+
+.users span {
+    font-size: 5rem;
+    color: #FAFF00;
+    height: 0px;
+}
+
+.text-users {
+    font-size: 1.2rem;
+
+}
+
+.users-info {
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 2.5rem;
+    font-weight: 400;
+}
+
+.user-2 {
+    margin: 0 3.5rem;
+}
+
+.users-sub-text {
+    padding: 2.5rem 0;
+    color: #FAFF00;
+}
+
+.sub-users {
+    padding: 2.5rem 0;
+}
+
+.sub-users-div1 {
+    width: 70%;
+}
+
+.sub-users-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+
+.sub-user-main-div {
+    margin: 2rem 0;
+
+}
+
+.sub-users-div2 {
+    box-shadow: .5rem .5rem .5rem 0px rgba(0,0,0,0.13);
+}
+
+.sub-users-p-div1 {
+    padding: 1.3rem 2rem;
+    margin-bottom: .5rem;
+}
+
+.sub-users-first-p {
+    box-shadow: -.1rem .6rem .2rem 0px rgba(0,0,0,0.13);
+    border-left: .3rem solid #FAFF00;
+}
+
+.sub-users-other-p {
+    background-color: #00A19D;
+    color: #fff;
+    box-shadow: -.1rem .2rem .2rem 0px rgba(0,0,0,0.13);
+}
+
+.sub-users-div2 {
+    padding: 2rem;
+}
+
+.sub-users-div2-titles {
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    color: #00A19D;
+    font-weight: 500;
+}
+
+.back-yellow {
+    background-color: #FAFF00;
+    padding: 3rem 0;
+}
+
+.subscribe {
+    font-size: 2rem;
+    opacity: .7;
+}
+
+.sub-search-div{
+    margin: 0 .5rem 0 1rem;
+
+}
+
+.sub-search {
+    padding: 1.5rem 2.5rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+}
+
+.sub-search::target-text {
+    padding-left: 1rem;
+}
+
+.subscribe-button button {
+    background-color: #00A19D;
+    border: none;
+    border-radius: .5rem;
+}
+
+.subscribe-button a {
+    color: #fff;
+    display: block;
+    padding: 1.5rem 3rem;
+    text-decoration: none;
+}
+
+.sub-search-text {
+    color: #00A19D;
+    line-height: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+footer {
+    background-color: #00A19D;
+    padding: 4rem 0;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.footer-div a {
+    padding: .3 0rem;
+    margin: .5rem 0;
+    text-decoration: none;
+    color: #FAFF00;
+    font-size: 1.2rem;
+}
+
+.footer-i {
+    font-size: 2rem;
+    color: #FAFF00;
+    padding-right: 1rem;
+}
+
+.footer-text {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.footer-number {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.footer-end-icon {
+    margin-bottom: 1.5rem;
+}
+
+.end-text {
+    margin: 3rem 0;
+} 
+
+.comminuty-icon {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #506D84;
+    margin: 0 .2rem;
+    padding: 2rem;
+    transition: all ease-in-out .3s;
+}
+
+.comminuty-icon a {
+    padding: 1.5rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.comminuty-icon:hover {
+    background-color: #FAFF00;
+}
+
+.comminuty-icon:hover:hover a {
+    color: #000;
+}

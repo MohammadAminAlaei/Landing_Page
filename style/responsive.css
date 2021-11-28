@@ -1,0 +1,207 @@
+@media (max-width:1200px){
+    .container {
+        max-width: 1140px;
+    }
+
+    .subcard-title {
+        width: 65%;
+    }
+}
+
+@media (max-width:992px){
+    .container {
+        max-width: 960px;
+    }
+
+    header {
+        padding-bottom: 3rem;
+    }
+
+    .inputs-div {
+        justify-content: space-around;
+    }
+    
+    .header-title {
+        padding: 3rem 0;
+    }
+
+    .main-header-div {
+        display: block;
+    }
+
+    .header-div2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2.5rem 0
+    }
+
+    .header-div2 button {
+        width: 60%;
+    }
+
+    .main-card-div {
+        flex-wrap: wrap;
+    }
+
+    .card-3 {
+        margin: 4rem 25%
+    }
+
+    .sub-cards {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sub-cards img {
+        margin: 0 auto;
+    }
+
+    .sub-cards h1 {
+        width: 100%;
+    }
+
+    .main-real-div {
+        flex-direction: column;
+    }
+
+    .main-real-div h1 {
+        width: 100%;
+    }
+
+    .main-first-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-first-div button{
+        width: 50%;
+        margin: .5rem 0;
+    }
+
+    .imgage-main {
+        margin: 2rem auto;
+    }
+
+    .sub-main {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .sub-main div {
+        margin: .5rem 0;
+    }
+
+    .users {
+        flex-wrap: wrap;
+    }
+
+    .user-2{
+        margin: 0!important;
+    }
+
+    .user-img {
+        float: left;
+        margin-right: 1.5rem;
+    }
+
+    .sub-users-div1 {
+        width: 100%;
+    }
+
+    .sub-users-p-div1 {
+        padding: 1.3rem 1rem;
+    }
+
+    .sub-users-div2-titles p {
+        width: 90%;
+    }
+
+    .sub-users-text {
+        width: 90%;
+    }
+
+    .sub-search-text {
+        margin-top: 1.5rem;
+    }
+
+    .footer-first-div {
+        flex-wrap: wrap;
+        max-width: 98%;
+    }
+
+    .footer-end-div {
+        margin-top: 2rem;
+    }
+
+    
+
+}
+
+@media (max-width:768px){
+    .container {
+        max-width: 720px;
+    }
+
+    .header-div2 button {
+        width: 80%;
+    }
+
+    .main-card-div {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 1rem 10%;
+    }
+
+    .main-first-div button{
+        width: 70%;
+    }
+
+    .sub-user-main-div {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:576px){
+    .container {
+        max-width: 540px;
+    }
+
+    .header-div2 button {
+        width: 100%;
+    }
+
+    .main-first-div button{
+        width: 100%;
+    }
+
+    .inputs input {
+        width: auto;
+    }
+
+    .inputs-div {
+        flex-direction: column;
+    }
+
+    .users-info, .users-sub-text {
+        float: left;
+    }
+
+    .sub-main-divs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sub-main-icon {
+        margin: 2rem 0!important;
+    }
+
+
+}
+
